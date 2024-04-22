@@ -1,1 +1,5 @@
 # AFM_ChromosomeRoughnessAnalysis
+
+This repository contains the scripts for analysing the roughness of chromosomes, imaged using Atomic Force Microscopy (AFM). An AFM image describes the topology of a sample, i.e., the intensity channel contains info about the real height.
+
+**_- Chromosome_imageRadialProfiles.py:_** this script takes two raw .txt files (within "Chromosome" folder) which describes the height values of all the pixels of an AFM image and a selected mask (which will be used as ROI for the analysis), respectively. After importing the image and the mask, the script finds the center of mass of the ROI, then computes the boundary of the ROI and compute the height profile along lines connecting the center of mass with all the points along the boundary. The results are then used to compute the height standard deviation at different length scales and show that the chromosome surface roughness exhibits interesting scaling properties, with scaling exponent=0.5. 
