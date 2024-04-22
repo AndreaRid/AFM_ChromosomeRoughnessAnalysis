@@ -1,7 +1,5 @@
 import pandas as pd
 import numpy as np
-import math
-from nanoscope_imageReader import nanoscope_imageReader
 import matplotlib.pyplot as plt
 from skimage import measure, draw
 import re
